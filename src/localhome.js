@@ -1,7 +1,7 @@
 import React from 'react';
 import './localhome.css'; // Import the CSS file for localhome
 import { useNavigate } from 'react-router-dom';
-import Navbar from 'E:/SEHAT/sehat-app/src/components/navbar.js';
+
 // Import Font Awesome icons
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faFileMedical, faPills, faTicketAlt, faStore, faUserCircle, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
