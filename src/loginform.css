@@ -1,0 +1,238 @@
+/* Global Styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow: hidden;
+}
+
+.wave {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  z-index: -1;
+}
+
+/* Container */
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 7rem;
+  padding: 0 2rem;
+}
+
+.img {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.img img {
+  width: 500px;
+}
+
+.login-content {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  text-align: center;
+}
+
+.login-content form {
+  width: 360px;
+}
+
+/* Avatar Image */
+.login-content img {
+  height: 100px;
+}
+
+.login-content h2 {
+  margin: 15px 0;
+  color: #333;
+  text-transform: uppercase;
+  font-size: 2.9rem;
+}
+
+/* Form Table */
+.form-table {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.form-table .label {
+  text-align: left;
+  padding-right: 10px;
+  color: #555;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.form-table input,
+.form-table select {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: 1px solid #d9d9d9;
+  border-radius: 5px;
+  outline: none;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-table input:focus,
+.form-table select:focus {
+  border-color: #3b5bdb; /* Darker gradient color */
+}
+
+.select-input {
+  appearance: none;
+  background: url('data:image/svg+xml;charset=US-ASCII,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4 5"><path fill="%23d9d9d9" d="M2 0L0 2h4z"/></svg>') no-repeat right 10px center;
+  background-size: 10px;
+}
+
+.forgot-password {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+  color: #3b5bdb; /* Darker gradient color */
+}
+
+/* Button */
+.btn {
+  width: 100%;
+  height: 50px;
+  border-radius: 25px;
+  outline: none;
+  border: none;
+  background-image: linear-gradient(to right, #5a7cdb, #3b5bdb, #5a7cdb); /* Gradient colors */
+  background-size: 200%;
+  font-size: 1.2rem;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  margin: 1rem 0;
+  cursor: pointer;
+  transition: background 0.5s, transform 0.2s;
+}
+
+.btn:hover {
+  background-position: right;
+  transform: scale(1.05);
+}
+
+/* Responsive Adjustments */
+@media screen and (max-width: 1050px) {
+  .container {
+    grid-gap: 5rem;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .login-content form {
+    width: 290px;
+  }
+
+  .login-content h2 {
+    font-size: 2.4rem;
+    margin: 8px 0;
+  }
+
+  .img img {
+    width: 400px;
+  }
+}
+
+@media screen and (max-width: 900px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+
+  .img {
+    display: none;
+  }
+
+  .wave {
+    display: none;
+  }
+
+  .login-content {
+    justify-content: center;
+  }
+}
+
+.forgot-password {
+  text-align: right;
+  padding-top: 10px;
+}
+
+.forgot-password a {
+  text-decoration: none;
+  color: #999;
+  font-size: 0.9rem;
+  transition: color 0.3s;
+}
+
+.forgot-password a:hover {
+  color: #3b5bdb; /* Darker gradient color */
+}
+
+.signup-link {
+  color: #5a7cdb;
+  margin-left: 5px;
+  text-decoration: none;
+}
+
+.signup-link:hover {
+  color: #3b5bdb;
+}
+
+/* Updated Container for Logo and Slogan */
+.logo-container {
+  display: flex;
+  flex-direction: column; /* Stacks elements vertically */
+  align-items: center;    /* Centers elements horizontally */
+  justify-content: center; /* Centers elements vertically */
+  margin-bottom: 20px;    /* Adds space below the logo-container */
+}
+
+/* Adjust logo size */
+.logo-container .logo {
+  width: 150px; /* Adjust width as needed */
+  height: auto;
+  display: block;
+}
+
+/* Style the slogan text */
+.slogan {
+  font-size: 2rem; /* Increased font size for better visibility */
+  font-weight: 600; /* Make the text bold */
+  color: #16b199  ; /* Use a primary color to match the theme */
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  margin-top: 10px; /* Space between logo and slogan */
+  letter-spacing: 1px; /* Slightly increase spacing between letters */
+  text-transform: uppercase; /* Makes all letters uppercase for a strong visual */
+}
+
+/* Highlight 'SEHAT' within the slogan */
+.slogan .highlight-sehat {
+  font-weight: 700; /* Make SEHAT even bolder */
+  color: #ff5a5f; /* Distinct color to highlight SEHAT */
+}

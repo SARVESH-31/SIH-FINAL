@@ -1,0 +1,108 @@
+/* Style for the LocalHome component */
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5; /* Light beige */
+}
+
+.localhome-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  background-color: #f5f5e9; /* Slightly warmer light beige */
+  min-height: 100vh;
+  position: relative; /* Added for positioning profile and back buttons */
+}
+
+/* Navigation buttons (profile and back) */
+.navigation-buttons {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.profile-button {
+  font-size: 3rem;
+  color: #6b9d72; /* Muted Green */
+  cursor: pointer;
+}
+
+.profile-button:hover {
+  color: #3e5c3a; /* Darker green on hover */
+}
+
+.welcome-section {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.greeting {
+  color: #3e5c3a; /* Warm Green */
+  font-size: 3rem; /* Increased font size */
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.subtext {
+  color: #6b7b5e; /* Slightly muted green for secondary text */
+  font-size: 1.5rem; /* Slightly increased font size */
+}
+
+.options-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  width: 100%;
+}
+
+.option-box {
+  background-color: #6b9d72; /* Warm Green */
+  color: #fdfdfb; /* Cream */
+  padding: 1.2rem; /* Reduced padding for a smaller appearance */
+  width: 220px; /* Slightly reduced width */
+  height: 130px; /* Slightly reduced height */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 10px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s, background-color 0.2s;
+}
+
+.option-box:hover {
+  transform: translateY(-5px);
+  background-color: #5a8a5f; /* Darker green on hover */
+}
+
+.option-icon {
+  font-size: 2.5rem; /* Reduced icon size */
+  margin-bottom: 1rem;
+}
+
+.option-box h2 {
+  margin: 0;
+  font-size: 1.3rem; /* Slightly reduced font size */
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .option-box {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.tabs {
+  color: #f5f5e9;
+}

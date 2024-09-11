@@ -1,0 +1,112 @@
+/* Default Role-based color variables */
+:root {
+  --navbar-gradient-start: #8E24AA; /* Default gradient start color */
+  --navbar-gradient-end: #6A1B9A;   /* Default gradient end color */
+  --navbar-active-color: #8E24AA;   /* Default active link color */
+  --navbar-hover-background: rgba(255, 255, 255, 0.2); /* Hover background */
+  --navbar-button-background: #8E24AA; /* Default button color */
+  --navbar-button-hover: #6A1B9A; /* Hover effect color */
+}
+
+/* Role-based color adjustments */
+.navbar.local {
+  --navbar-gradient-start: #8bc34a; /* Warm Green */
+  --navbar-gradient-end: #dce775;   /* Light Beige */
+  --navbar-active-color: #8bc34a;   /* Warm Green for active link */
+  --navbar-button-background: #8bc34a; /* Warm Green button */
+  --navbar-button-hover: #dce775; /* Light Beige hover effect */
+}
+
+.navbar.doctor {
+  --navbar-gradient-start: #FF6F61; /* Soft Coral */
+  --navbar-gradient-end: #FFAB91;   /* Cream */
+  --navbar-active-color: #FF6F61;   /* Soft Coral for active link */
+  --navbar-button-background: #FF6F61; /* Soft Coral button */
+  --navbar-button-hover: #FFAB91; /* Cream hover effect */
+}
+
+.navbar.pharmacy {
+  --navbar-gradient-start: #A5D6A7; /* Light Green */
+  --navbar-gradient-end: #B9FBC0;   /* Mint */
+  --navbar-active-color: #A5D6A7;   /* Light Green for active link */
+  --navbar-button-background: #A5D6A7; /* Light Green button */
+  --navbar-button-hover: #B9FBC0; /* Mint hover effect */
+}
+
+.navbar.admin {
+  --navbar-gradient-start: #8E24AA; /* Deep Purple */
+  --navbar-gradient-end: #D1C4E9;   /* Lavender */
+  --navbar-active-color: #8E24AA;   /* Deep Purple for active link */
+  --navbar-button-background: #8E24AA; /* Deep Purple button */
+  --navbar-button-hover: #D1C4E9; /* Lavender hover effect */
+}
+
+.navbar {
+  background: linear-gradient(90deg, var(--navbar-gradient-start), var(--navbar-gradient-end)); /* Gradient background */
+  color: white;
+  padding: 15px 20px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft shadow */
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-logo a {
+  font-size: 2rem; /* Larger logo */
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  transition: transform 0.3s ease;
+}
+
+.navbar-logo a:hover {
+  transform: scale(1.1); /* Slight zoom on hover */
+}
+
+.navbar-menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-menu li {
+  margin-left: 25px;
+}
+
+.navbar-menu li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 8px 16px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-menu li a:hover {
+  background-color: var(--navbar-hover-background); /* Slight translucent background on hover */
+  transform: translateY(-2px); /* Lift effect */
+}
+
+.navbar-menu li a.active {
+  background-color: var(--navbar-active-color); /* Color for active link */
+  color: white;
+}
+
+.navbar-button {
+  background-color: var(--navbar-button-background);
+  color: white;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-button:hover {
+  background-color: var(--navbar-button-hover);
+  transform: translateY(-2px);
+}

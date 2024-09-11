@@ -1,0 +1,91 @@
+.pharmacy-home-container {
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  background-color: #e0f2f1; /* Light Green */
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+/* Navigation buttons (profile and back) */
+.navigation-buttonsphar {
+  position: absolute;
+  top: 30px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0 20px;
+}
+
+.profile-buttonphar  {
+  font-size: 3rem;
+  color: #004d40; /* Muted Green */
+  cursor: pointer;
+}
+
+.profile-buttonphar :hover  {
+  color: #00695c; /* Darker green on hover */
+}
+
+h1 {
+  font-size: 2.2rem;
+  color: #004d40; /* Dark Green */
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtext {
+  color: #6b7b5e; /* Slightly muted green for secondary text */
+  font-size: 1.5rem; /* Slightly increased font size */
+}
+
+.icon {
+  margin-right: 0.5rem;
+}
+
+.scan-btn {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  color: #fff;
+  background-color: #004d40; /* Dark Green */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scan-btn:hover {
+  background-color: #00695c; /* Slightly lighter green */
+}
+
+.scanner-container {
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  margin-top: 1.5rem;
+}
+
+.qr-data {
+  margin-top: 1.5rem;
+  font-size: 1.2rem;
+  color: #333;
+  display: flex;
+  align-items: center;
+}
+
+.icon-success {
+  color: #28a745; /* Success green */
+  margin-right: 0.5rem;
+  font-size: 1.5rem;
+}

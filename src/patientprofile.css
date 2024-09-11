@@ -1,0 +1,85 @@
+.profile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f3e5f5; /* Light Beige */
+}
+
+.profile-card {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  width: 80%; /* Adjust width to utilize more of the page */
+  max-width: 900px; /* Limit maximum width for better readability */
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  color: #512da8;
+}
+
+.profile-details {
+  flex: 1;
+  margin-left: 20px; /* Space between image and details */
+}
+
+h2{
+  color: #512da8;
+}
+.profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+
+}
+
+.qr-button-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.qr-button {
+  background-color: #000000; /* Warm Green */
+  color: #512da8;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-bottom: 20px; /* Space between button and QR code */
+}
+
+.qr-button:hover {
+  background-color: #512da8; /* Slightly muted green */
+}
+
+.qr-code {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.qr-code img {
+  width: 150px;
+  height: 150px;
+}
+
+p {
+  font-size: 16px;
+  color: #512da8; /* Muted Green */
+  margin-bottom: 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 5px;
+  color: #512da8;
+}

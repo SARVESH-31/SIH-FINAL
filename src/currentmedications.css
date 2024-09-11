@@ -1,0 +1,61 @@
+/* Style for Current Medications component */
+
+.medications-container {
+    font-family: 'Arial', sans-serif;
+    padding: 2rem;
+    background-color: #f5f5e9;
+    min-height: 100vh;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #3e5c3a; /* Warm green */
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .medication-section {
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .medication-section h2 {
+    font-size: 1.8rem;
+    color: #5a8a5f; /* Soft green */
+    margin-bottom: 1rem;
+  }
+  
+  .medication-section ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .medication-section li {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+    color: #4a4a4a;
+    display: flex;
+    align-items: center;
+  }
+  
+  .medication-section input[type='checkbox'] {
+    margin-right: 1rem;
+  }
+  
+  .medication-section .med-name {
+    font-weight: bold;
+  }
+  
+  .medication-section .med-taken {
+    font-weight: bold;
+    text-decoration: line-through; /* Cross out text when medication is taken */
+    color: #a5a5a5; /* Gray out text */
+  }
+  
+  .medication-section li:last-child {
+    margin-bottom: 0;
+  }
+  

@@ -1,0 +1,55 @@
+.pharmacy-near-me {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5e9;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  h1 {
+    color: #3e5c3a;
+  }
+  
+  button {
+    background-color: #6b7b5e;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #5a6a51;
+  }
+  
+  .loading {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .error {
+    color: red;
+    margin-top: 20px;
+  }
+  
+  .location-info {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #555;
+  }
+  
+  .pharmacy-list {
+    margin-top: 20px;
+    padding: 0;
+    list-style: none;
+  }
+  
+  .pharmacy-list li {
+    background-color: #ffffff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  

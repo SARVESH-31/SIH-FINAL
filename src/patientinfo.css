@@ -1,0 +1,98 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  font-family: Arial, sans-serif; /* Default font for better readability */
+}
+
+.patient-info-container {
+  background-color: #f5f5dc; /* Light Beige */
+  padding: 30px;
+  border-radius: 12px;
+  max-width: 100%; /* Adjusted to fit well within the viewport */
+  max-height: 100%;
+  margin: auto;
+  color: #2e7d32; /* Warm Green */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: auto; /* Allows the container to grow with content */
+  height: 100vh; /* Full viewport height */
+  width: 100vw; /* Full viewport width */
+}
+
+.patient-info-container h2 {
+  color: #1b5e20; /* Darker Warm Green for headings */
+  margin-bottom: 20px;
+  font-size: 2em; /* Larger font size for better visibility */
+  text-align: center; /* Center heading text */
+  border-bottom: 2px solid #2e7d32; /* Warm green underline */
+  padding-bottom: 10px;
+}
+
+.patient-symptoms {
+  margin-bottom: 20px;
+  padding: 20px;
+  border: 1px solid #c8e6c9; /* Light warm green border */
+  border-radius: 8px;
+  background-color: #e8f5e9; /* Very light green for a soft feel */
+  width: 100%; /* Full width of the container */
+}
+
+.patient-symptoms h3 {
+  margin-bottom: 10px;
+  color: #388e3c; /* Warm green */
+  font-size: 1.5em; /* Larger font size for better visibility */
+}
+
+.patient-symptoms p {
+  font-size: 16px;
+  line-height: 1.5; /* Improved readability */
+}
+
+.diagnosis-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%; /* Full width of the container */
+  max-width: 600px; /* Limit form width for better appearance */
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #33691e; /* Warm green for labels */
+}
+
+.form-group textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #aed581; /* Light green */
+  border-radius: 6px;
+  font-size: 16px;
+  background-color: #f1f8e9; /* Light greenish beige */
+  box-sizing: border-box; /* Ensures padding and border are included in width */
+}
+
+.submit-button {
+  padding: 12px 20px;
+  background-color: #388e3c; /* Warm Green */
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+  align-self: center; /* Center button within the form */
+}
+
+.submit-button:hover {
+  background-color: #2e7d32; /* Darker warm green on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}

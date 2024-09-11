@@ -1,0 +1,73 @@
+/* Style for the HealthRecords component */
+
+.health-records-container {
+  font-family: 'Arial', sans-serif;
+  padding: 2rem;
+  background-color: #f5f5e9;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #3e5c3a; /* Warm green */
+  margin-bottom: 1.5rem; /* Increased space below the main heading */
+  text-align: center; /* Center the main heading */
+}
+
+.basic-details {
+  background-color: #f9f9f9;
+  padding: 1.5rem;
+  margin-bottom: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.basic-details h2 {
+  font-size: 1.8rem;
+  color: #3e5c3a;
+  margin-bottom: 1rem; /* Increased space below the subheading */
+}
+
+.basic-details p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  margin-bottom: 0.5rem; /* Added spacing between details */
+}
+
+.collapsible-section {
+  margin-top: 2rem; /* Added spacing between the basic details and collapsible tabs */
+}
+
+.tab {
+  background-color: #6b9d72;
+  color: #fff;
+  padding: 1rem;
+  margin-bottom: 1.5rem; /* Added more space between tabs */
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.tab:hover {
+  background-color: #5a8a5f;
+}
+
+.tab h3 {
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.content {
+  background-color: #f9f9f9;
+  padding: 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1.5rem; /* Added space below the content section */
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.content p {
+  font-size: 1.2rem;
+  color: #4a4a4a;
+  margin-bottom: 0.75rem; /* Increased space between paragraphs */
+}
